@@ -40,6 +40,10 @@ jobs:
               id: cp-env
               run: cp .env.test .env
 
+            - name: "Copy phpunit.xml"
+              id: cp-phpunit
+              run: cp phpunit.xml.dist phpunit.xml
+
             - name: "Install PHP with extensions"
               uses: shivammathur/setup-php@v2
               with:
