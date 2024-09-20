@@ -1,4 +1,6 @@
 {
+    "name": "dmytro-pro/symfony-demo-demo",
+    "description": "Official demo app fork",
     "license": "proprietary",
     "type": "project",
     "minimum-stability": "stable",
