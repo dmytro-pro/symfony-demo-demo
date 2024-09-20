@@ -36,6 +36,10 @@ jobs:
             - name: "Checkout code"
               uses: actions/checkout@v4
 
+            - name: "Copy .env file"
+              id: cp-env
+              run: cp .env.test .env
+
             - name: "Install PHP with extensions"
               uses: shivammathur/setup-php@v2
               with:
