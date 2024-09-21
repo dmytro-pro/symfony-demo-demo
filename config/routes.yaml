@@ -17,3 +17,7 @@ controllers:
     prefix: /{_locale}
     defaults:
         _locale: '%locale%'
+
+controllers_internal:
+    resource: '../src/Controller/Internal/'
+    type: attribute
