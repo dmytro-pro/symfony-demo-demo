@@ -20,8 +20,9 @@ use Symfony\Component\Routing\Attribute\Route;
 class StatusController extends AbstractController
 {
     public function __construct(
-        protected EntityManagerInterface $entityManager
-    ) {}
+        protected EntityManagerInterface $entityManager,
+    ) {
+    }
 
     #[Route('/internal/status', name: 'app_status')]
     public function index(): Response
