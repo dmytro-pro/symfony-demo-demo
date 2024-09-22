@@ -32,7 +32,7 @@ class StatusController extends AbstractController
             $this->entityManager->getConnection()->executeQuery('SELECT 1');
             $dbStatus = 'ok';
         } catch (\Exception $e) {
-            $dbStatus = 'error: ' . $e->getMessage();
+            $dbStatus = 'error: '.$e->getMessage();
         }
 
         // You can add more checks here as needed
